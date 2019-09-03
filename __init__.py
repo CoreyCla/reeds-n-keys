@@ -27,7 +27,12 @@ def pricing():
 @app.route('/contact_form', methods=['GET', 'POST'])
 def contact_form():
     if request.method == 'POST':
-        print(request.form['last_name', 'first_name', 'email', 'inst-type', 'description'])
+        print(request.form['last_name'])
+        print(request.form['first_name'])
+        print(request.form['email'])
+        print(request.form['inst-type'])
+        print(request.form['description'])
+
         return render_template('thanks.html')
     else:
         return render_template('contact.html')
