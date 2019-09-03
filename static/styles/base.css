@@ -186,14 +186,14 @@ li a:hover {
     height: 80%;
     margin-left: 1%;
     font-size: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .blurb2 img {
     float: right;
     width: 45%;
     height: 100%;
-    max-width:100%;
+    max-width:45%;
     max-height:100%;
 }
 
@@ -262,3 +262,5 @@ input[type=submit]:hover {
     background-color: #111;
     padding: 20px;
 }
+
+
