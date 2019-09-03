@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- my styles -->
+		<link rel="stylesheet" href="../static/styles/base.css">
+    </head>
+
+    <body>
+        <div class="title">
+            <h1>Reeds & Keys</h1>
+            <h1>Woodwind Repair</h1>
+        </div>
+        <div id="navbar">
+            <nav class="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" style="color:#bd951c" href="/">Reeds & Keys</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+                <a class="schedule-button" style="float:right" href="/contact">Schedule Now</a>
+            </nav>
+        </div>
+
+        {% block content %}{% endblock %}
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            navbar.style.zIndex = 10;
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+    </body>
+</html>

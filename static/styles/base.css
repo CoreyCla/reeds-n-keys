@@ -1,0 +1,253 @@
+.title {
+    width: 100%;
+    height: 230px;
+    background-image: url("/static/images/index_img.jpg");
+    color: #bd951c;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 90px;
+    text-shadow: 3px 2px black;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+body {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
+}
+
+body h2 {
+    color: #bd951c;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #111;
+    width: 100%;
+    style: block;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 14px 16px;
+    display: block;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #222;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-schedule {
+    background-color: #bd951c;
+    border: none;
+    list-style-type: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.nav-schedule:hover {
+    background-color: #736700;
+    text-decoration: none;
+}
+
+.container {
+    background: #111;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: auto;
+    box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.75);
+    width: 1600px;
+}
+
+.container h2 {
+    color: #bd951c;
+}
+
+.carousel {
+    height: 700px;
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    border-radius: 18px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.item {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.top-blurb {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    color: #bd951c;
+}
+
+.bottom-blurb {
+    width: 100%;
+}
+
+.blurb1 {
+    color: #dedddc;
+    background-color: #1a1a1a;
+    padding: 20px;
+    float: left;
+    height: 40%;
+    width: 49%;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.blurb1 p {
+    text-align: left;
+    width: 40%;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.blurb1 img {
+    float: right;
+    max-width:100%;
+    max-height:100%;
+}
+
+.blurb2 {
+    color: #dedddc;
+    background-color: #1a1a1a;
+    padding: 20px;
+    float: right;
+    height: 40%;
+    width: 49%;
+    box-shadow: 3px 3px 3px -1px rgba(0, 0, 0, 0.75);
+}
+.blurb2 p {
+    text-align: left;
+    width: 40%;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+.blurb2 img {
+    float: right;
+    max-width:100%;
+    max-height:100%;
+}
+
+.schedule-appt {
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    color: #dedddc;
+    font-size: 50px;
+    height: 200px;
+}
+
+.schedule-button {
+    background-color: #bd951c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 18px;
+}
+
+.schedule-button:hover {
+    background-color: #736700;
+    color: white;
+    text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  color: white;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 7px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #bd951c;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form {
+    background-color: #111;
+    padding: 20px;
+}
