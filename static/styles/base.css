@@ -1,6 +1,6 @@
 .title {
     width: 100%;
-    height: 230px;
+    height: 50%;
     background-image: url("/static/images/index_img.jpg");
     color: #bd951c;
 }
@@ -10,7 +10,16 @@
     font-size: 90px;
     text-shadow: 3px 2px black;
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 1%;
+}
+
+@media screen and (max-device-width: 640px) {
+    .title {
+        height: 25%;
+    }
+    .title h1 {
+        font-size: 40px;
+    }
 }
 
 body {
@@ -24,11 +33,147 @@ body h2 {
     text-align: center;
 }
 
+@media screen and (max-device-width: 640px) {
+    #navbar {
+        display: none;
+        position: static!important;
+    }
+}
+
+@media screen and (max-device-width: 640px) {
+    a {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+        }
+
+    a:hover {
+        color: tomato;
+        }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+        }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+        }
+/*
+ * Just a quick hamburger
+ */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+                    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+        }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+        }
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+        }
+/*
+ * But let's hide the middle one.
+ */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+        }
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+        }
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+        }
+/*
+ * And let's slide it in from the left
+ */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+        }
+}
+
+@media screen and (min-device-width: 768px) {
+    #menuToggle {
+        display: none;
+    }
+}
+
 .navbar {
     background-color: #111;
     width: 100%;
     style: block;
-    margin-bottom: 5px;
+    margin-bottom: 5%;
     overflow: hidden;
 
 }
@@ -64,8 +209,8 @@ li a:hover {
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 0px;
     width: 100%;
 }
 
@@ -86,15 +231,22 @@ li a:hover {
     background-color: #736700;
     text-decoration: none;
 }
+*/
 
 .container {
     background: #111;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 1%;
+    margin-bottom: 5%;
     box-shadow: 5px 5px 5px -1px rgba(0, 0, 0, 0.75);
     width: 90%;
+}
+
+@media screen and (max-device-width: 640px) {
+    .container {
+        margin-top: 20%;
+    }
 }
 
 .container h2 {
@@ -103,14 +255,14 @@ li a:hover {
 }
 
 .carousel {
-    height: 700px;
+    height: 100%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    border-radius: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10%;
+    border-radius: 10%;
 }
 
 .carousel-inner {
@@ -159,7 +311,7 @@ li a:hover {
     height: 80%;
     margin-left: 1%;
     font-size: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .blurb1 img {
@@ -173,7 +325,7 @@ li a:hover {
 .blurb2 {
     color: #dedddc;
     background-color: #1a1a1a;
-    padding: 20px;
+    padding: 1%;
     float: right;
     height: 40%;
     width: 49%;
@@ -197,13 +349,27 @@ li a:hover {
     max-height:100%;
 }
 
+@media screen and (max-device-width: 640px) {
+    .blurb1 {
+        float: none;
+        width: 100%;
+    }
+    .blurb2 {
+        float: none;
+        width: 100%
+    }
+    .schedule-appt p{
+        font-size: 25px;
+    }
+}
+
 .schedule-appt {
     clear: both;
-    padding: 10px;
+    padding: 25px;
     text-align: center;
     color: #dedddc;
     font-size: 50px;
-    height: 200px;
+    height: 50%;
 }
 
 .schedule-button {
@@ -228,7 +394,13 @@ li a:hover {
   text-align: center;
 }
 
-.row:after {
+@media screen and (max-device-width: 640px) {
+    .column {
+        font-size: 12px;
+    }
+}
+
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -262,5 +434,3 @@ input[type=submit]:hover {
     background-color: #111;
     padding: 20px;
 }
-
-

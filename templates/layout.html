@@ -1,12 +1,11 @@
 <html lang="en">
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 		<!-- my styles -->
@@ -18,6 +17,7 @@
             <h1>Reeds & Keys</h1>
             <h1>Woodwind Repair</h1>
         </div>
+
         <div id="navbar">
             <nav class="navbar">
                 <ul class="nav navbar-nav">
@@ -29,6 +29,21 @@
                 <a class="schedule-button" style="float:right" href="/contact">Schedule Now</a>
             </nav>
         </div>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="/"><li>Home</li></a>
+                    <a href="/pricing"><li>Pricing</li></a>
+                    <a href="/about"><li>About</li></a>
+                    <a href="/contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
 
         {% block content %}{% endblock %}
 
