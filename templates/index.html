@@ -1,18 +1,21 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="container">
+<div class="container-fluid">
     <div class="top-blurb">
         <h1 style="color:red;">Please pardon our dust.</h1>
         <h2 style="color:red;">Our website is currently undergoing maintenance, and some of our pages may look a little untidy.</h2>
         <h3 align="center" style="color:#dedddc;"> Professional woodwind repair services in Eugene and Springfield  area</h3><br/>
         <p>Contact us today to schedule a free consultation at (541)660-5636 </p>
     </div>
+
+    <!-- Picture Slide -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -44,12 +47,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!-- The two bottom blurbs -->
     <div class="bottom-blurb">
         <div class="blurb1">
             <img src="/static/images/techpic.jpg" alt="Not-Carousel">
             <h2 style="color:#bd951c">Technician</h2>
-            <p>Our technician Sativa has been repairing brass and woodwinds for 5 years. She plays saxophone, mandolin, bass, keyboard, and flute!
- </p>
+            <p>Our technician Sativa has been repairing brass and woodwinds for 5 years. She plays saxophone, mandolin, bass, keyboard, and flute!</p>
         </div>
         <div class="blurb2">
             <img src="/static/images/servicepic.jpg" alt="Not-Carousel">
@@ -57,6 +61,7 @@
             <p>We offer woodwind repairs, including overall adjustments and rebuilds, as well as specific repairs like: changing pads, recorking tenons, and minor playing conditions. Instruments are always estimated for free. Feel free to contact Reeds & Keys so we can work together on finding a repair that works for you! </p>
         </div>
 
+    <!-- Schedule button -->
         <div class="schedule-appt">
             <p> ||| Consultation By Appointment |||</p>
             <a class="schedule-button" href="/contact">Schedule Now</a>
